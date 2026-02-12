@@ -6,10 +6,10 @@ services:
     ports:
       - "3000:3000"
     environment:
-      MONGODB_URI: mongodb+srv://yashmanek2001_db_user:aTib6nMQchAfoPKX@cluster0.tuv8tgy.mongodb.net/?appName=Cluster0
+      MONGODB_URI: ${MONGODB_URI}
       PORT: 3000
-      JWT_SECRET: YashManek@2005!
-      REDIS_URL: rediss://red-d4097qf5r7bs73a9j3h0:P9JAt6Ne4hfmPtHXj5K6jY8t0KJuMa2c@singapore-keyvalue.render.com:6379
+      JWT_SECRET: ${JWT_SECRET}
+      REDIS_URL: ${REDIS_URL}
     restart: unless-stopped
 
   frontend:
